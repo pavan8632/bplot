@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nsource(\"/home/pavan/RPCA/PCAFunc.R\")\n\n#Define server logic\nshinyServer(function(input,output){\n  \n  output$contents<-renderTable({\n  dataFile <- input$file1\n  if(is.null(dataFile))\n     return(NULL)\n  read.csv(dataFile$datapath, header=input$header,sep=input$sep,quote=input$quote)\n  \n  })\n  output$parsed<-renderTable({\n    dataFile <- input$file1\n    df<-read.csv(dataFile$datapath,header=input$header,sep=input$sep,quote=input$quote)\n    df<-removeString(df)\n    #df<-removeNA(df)\n    return(df)\n    #std<-input$std\n    #if(std=='Log')\n     # dq<<-log(df)\n      #return(dq)\n    #if(std=='z')\n     # dq<<-stdMean(df)\n     # return(dq)\n  })\n})",
+    "created" : 1429725250717.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "974369881",
+    "id" : "1FA52F86",
+    "lastKnownWriteTime" : 1429770954,
+    "path" : "~/RPCA/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

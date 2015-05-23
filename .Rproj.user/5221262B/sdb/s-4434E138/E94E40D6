@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\n\nshinyUI(pageWithSidebar( \n  headerPanel(\"Principal Component Analysis\"),\n  \n  sidebarPanel(\n    fileInput('file1','Choose CSV File', accept=c('text/csv,','.csv')),\n    checkboxInput('header', 'Header', TRUE),\n    selectInput('sep','Separator',c(Comma=',',Semicolon=';',Tab='\\t')),\n    radioButtons('quote', 'Quote',c(None=' ','Double Quote'='\"', 'Single Quote'=\"'\")),\n    selectInput('std','Std. Method',c(Log='Log',ZScore='z'))\n    \n    \n    ),\n  \n  mainPanel(\n    tabsetPanel(\n      tabPanel(\"Data\",tableOutput('contents')),\n      tabPanel(\"Parsed Data\",tableOutput('parsed'))\n         ) \n  )\n  \n  \n  \n  \n  \n  ))",
+    "created" : 1429725178792.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4004486104",
+    "id" : "E94E40D6",
+    "lastKnownWriteTime" : 1429740824,
+    "path" : "~/RPCA/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

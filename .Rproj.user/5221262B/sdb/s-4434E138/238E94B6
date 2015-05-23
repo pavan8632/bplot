@@ -1,0 +1,17 @@
+{
+    "contents" : "removeNA <- function(df){\n  df[ , colSums(is.na(df))!=nrow(df)]\n}\nremoveString <-function(df){\n \n #df[ ,colSums(apply(df, MARGIN=c(1,2),FUN=is.character))==0]\n\n  df[!sapply(df, is.character)]\n  \n  \n}\nstdMean <- function(df){\n  df<-scale(df,center=TRUE,scale=TRUE)\n}",
+    "created" : 1429728734165.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1846191480",
+    "id" : "238E94B6",
+    "lastKnownWriteTime" : 1430009516,
+    "path" : "~/RPCA/PCAFunc.R",
+    "project_path" : "PCAFunc.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
