@@ -161,13 +161,10 @@ BasicPlot<-reactive({
 })
 
 output$FergPlot<-renderPlot({
-    FergusonPlot()
+    BasicPlot()
     
   })
-output$downloadFplot<-downloadHandler({
- 
-}
-  )
+
 
 #loadings plot
 output$loadings <- renderPlot({
