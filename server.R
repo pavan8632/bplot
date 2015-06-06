@@ -164,6 +164,10 @@ output$FergPlot<-renderPlot({
     FergusonPlot()
     
   })
+output$downloadFplot<-downloadHandler({
+ 
+}
+  )
 
 #loadings plot
 output$loadings <- renderPlot({

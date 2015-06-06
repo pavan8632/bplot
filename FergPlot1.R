@@ -1,7 +1,7 @@
 library(grid)
 library(ggplot2)
 #change htis later to a dirname call
-img<-readPNG("/home/pavan/RPCA/PCVenn.png")
+img<-readPNG("./PCVenn.png")
 
 LoadingSort<-function(df,cutoff,numarr){
   #Creating a list of sorted variables by PC, then choosing top (numArr) ones to display)
