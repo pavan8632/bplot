@@ -145,7 +145,7 @@ output$screeplot <- renderPlot({
   }
 })
 
-FergusonPlot<-reactive({
+BasicPlot<-reactive({
   if (is.null(PCA())) {
     return(NULL)
   } else {
