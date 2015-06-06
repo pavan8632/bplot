@@ -25,7 +25,7 @@ shinyUI(pageWithSidebar(
       tabPanel("Data",tableOutput("contents")),
       tabPanel("Parsed Data",tableOutput("parsed")),
       tabPanel("Scree Plot",plotOutput("screeplot",height = 280*2, width = 250*2)),
-      tabPanel("Ferg Plot",plotOutput("FergPlot")),
+      tabPanel("Ferg Plot",plotOutput("BasicPlot")),
       tabPanel("Loadings Plot",plotOutput("loadings")) 
          ) 
   )
