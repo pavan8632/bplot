@@ -160,7 +160,7 @@ BasicPlot<-reactive({
 
 })
 
-output$FergPlot<-renderPlot({
+output$BPlot<-renderPlot({
     BasicPlot()
     
   })
